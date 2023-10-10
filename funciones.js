@@ -1,15 +1,5 @@
-function programa() {
-  switch(estado) {
-  case 0:
-    background(0)
-      boton(width-150, height+170, width/10, "Empezar", 255, 0)
-    break
-    case 1:
-    background(255)
-      juego()
-      break
-  }
-}
+
+
 function juego(){
  background(0);//0-255 (R,G,B)
   stroke(255); //Color Linea del medio
@@ -81,7 +71,7 @@ function juego(){
 }
 
 function boton(x, y, tam, texto, fondo, colorDeTexto) {
-  push()
+
     fill(fondo)
     if (mousePressed &&
     dist(mouseX, mouseY, x, y) < tam / 2) {
@@ -89,5 +79,16 @@ function boton(x, y, tam, texto, fondo, colorDeTexto) {
 circle(x-40, y- 330, tam/ 3)
    
 
-    pop()
+   
+}
+function mousePressed() {
+  if(estado===0 && botonInicio){
+ estado=1;
+ }
+if(estado===0 && botonInstrucciones){
+ estado=2;
+}
+if(estado===0 && botoncreditos){
+ estado=3;
+}
 }
