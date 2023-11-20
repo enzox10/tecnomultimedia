@@ -2,6 +2,7 @@
 //COMISION 5
 //CUENTO : LA SIRENITA
 //https://www.youtube.com/watch?v=Gq_3AOtFNe0
+//LEGAJO:94026/5
 let juego 
 
 function setup() {
