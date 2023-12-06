@@ -4,7 +4,7 @@ class Enemigo {
     this.y = y
     this.tam = tam
     this.colorA = color(120)
-    this.imagen2 = loadImage("assets/2.png");
+    this.imagen2 = loadImage("assets/12.png");
   }
 
   mover() {
